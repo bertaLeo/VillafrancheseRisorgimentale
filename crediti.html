@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="css/aos.css"/>
+    <script src="js/aos.js"></script> 
+    <script src="js/script.js"></script>
+    <style>
+        .bg-map{
+            background-image: url(image/mapp.svg);
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .dark{
+        background-color: black;
+        color:white
+        }
+    </style>
+</head>
+<body class="bg-map dark:bg-gray-200">
+    <script>
+      AOS.init();
+    </script>
+    <div class="z-40 fixed w-full flex justify-center items-center">
+        <header class="top-0 fixed w-full mx-8 h-14 border-0 bg-gray-900 rounded-b-2"> </header>
+    </div>
+      <nav class="fixed w-full z-50">
+        <div class="px-8 pt-8">
+          <div class="flex justify-between items-center text-white bg-gray-900 rounded-full text-2xl">
+            <a href="faq.html" class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-500">
+              <span>?</span>
+              <!-- o icon-help -->
+            </a>
+            <div>
+              AvAnti Savoia!
+            </div>
+            <button id="menu_button" role="button" class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-500">
+              <i id="menu_icon" class="icon-menu1"></i>
+              <!-- oppure icon-more_vert o icon-menu1 o icon-pending -->
+            </button>
+          </div>
+          <div id="menu_dropdown" class="origin-top-right absolute right-8 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+            <a href="map.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Home</a>
+            <a href="contatti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Contatti</a>
+            <a href="crediti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-3">Crediti</a>
+            <a href="policy.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-4">Politica dati</a>
+            <a href="en/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-5">English version</a>
+        </div>
+        </div>
+      </nav>
+      <!-- link width https://tailwindcss.com/docs/width -->
+      <div class="m-0 p-8 w-screen h-screen">
+            <div class="flex flex-col  w-auto h-auto justify-center items-center relative m-0 z-10 top-20">
+                <div class="h-auto w-11/12 text-4xl text-gray-900 font-bold text-center mb-6 p-6 uppercase tracking-wider">CREDITI</div>
+                <div class="block w-11/12 mt-2 text-white h-auto p-6 rounded-3xl bg-gray-900">
+                    <h1 class="h-auto w-full text-3xl text-center mb-6 uppercase tracking-wider">I referenti del progetto</h1>
+                    <p>
+                        <ul class="flex flex-col text-xl md:grid justify-center items-center text-center md:gap-4 list-none">
+                            <li>Prof.ssa Marianna Barugola</li>
+                            <!--evetuale  class="pl-10" style="text-indent: -2.5rem;" per sfalsare il testo rispetto alla parola Prof. da sx-->
+                            <li>Prof.ssa Cristina Carletti</li>
+                            <li>Prof.ssa Irene Disco</li>
+                            <li>Prof.ssa Grazia Felici</li>
+                            <li>Prof. Christian Marchesini</li>
+                            <li>Prof. Luca Porto</li>
+                            <li>Prof. Lamberto Scolari</li>
+                            <li>Prof. Andrea Tumicelli</li>
+                        </ul>
+                    </p>                    
+                </div>
+                <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" class="block w-11/12 mt-10 text-white h-auto p-6 rounded-3xl bg-gray-900">
+                    <h1 class="h-auto w-full text-3xl text-center mb-6 uppercase tracking-wider">Le classi coinvolte</h1>
+                    <div class="flex flex-col justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                            5 ALA
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (liceo scientifico scienze applicate)
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-2 justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                            4 ALM
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (liceo artistico multimediale)
+                        </div>
+                    </div>    
+                    <div class="flex flex-col mt-2 justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                            4 BLM
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (liceo artistico multimediale)
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-2 justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                            5 AEA
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (istituto tecnico elettrico ed automazione)
+                        </div>
+                    </div>                 
+                </div>
+                <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" class="block w-11/12 mt-10 mb-10 text-white h-auto p-6 rounded-3xl bg-gray-900">
+                    <h1 class="h-auto w-full text-3xl text-center mb-6 uppercase tracking-wider">Licenze</h1>
+                    <div class="flex flex-col justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer nofollow">TAILWIND CSS</a>
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (libreria stili)
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-2 justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                            <a href="http://michalsnik.github.io/aos/" target="_blank" rel="noopener noreferrer nofollow">AOS.JS</a>
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (libreria js transizioni)
+                        </div>
+                    </div>    
+                    <div class="flex flex-col mt-2 justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                            <a href="https://leafletjs.com/" target="_blank" rel="noopener noreferrer nofollow">LEAFLET</a> 
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (libreria js per le mappe)
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-2 justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                            <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer nofollow">OPENSTREETMAP</a>
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (raccolta dati geografici)
+                        </div>
+                    </div>    
+                    <div class="flex flex-col mt-2 justify-center items-center md:flex-row md:gap-4">
+                        <div class="flex text-xl">
+                           <a href="http://cartodb.com/attributions" target="_blank" rel="noopener noreferrer nofollow">CARTO DB</a> 
+                        </div>
+                        <div class="flex text-base italic text-center">
+                            (servizio stile mappa)
+                        </div>
+                    </div>             
+                </div>
+            </div>
+
+            
+           
+        </div>
+      
+      </div>      
+</body>
+</html>

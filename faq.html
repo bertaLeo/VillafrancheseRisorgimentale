@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <script src="js/script.js"></script>
+    <style>
+        .bg-map{
+            background-image: url(image/mapp.svg);
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .dark{
+        background-color: black;
+        color:white
+        }
+    </style>
+</head>
+<body class="bg-map dark:bg-gray-200">
+    <div class="z-40 fixed w-full flex justify-center items-center">
+        <header class="top-0 fixed w-full mx-8 h-14 border-0 bg-gray-900 rounded-b-2"> </header>
+    </div>
+      <nav class="fixed w-full z-50">
+        <div class="px-8 pt-8">
+          <div class="flex justify-between items-center text-white bg-gray-900 rounded-full text-2xl">
+            <a href="faq.html" class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-500">
+              <span>?</span>
+              <!-- o icon-help -->
+            </a>
+            <div>
+              AvAnti Savoia!
+            </div>
+            <button id="menu_button" role="button" class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-500">
+              <i id="menu_icon" class="icon-menu1"></i>
+              <!-- oppure icon-more_vert o icon-menu1 o icon-pending -->
+            </button>
+          </div>
+          <div id="menu_dropdown" class="origin-top-right absolute right-8 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+            <a href="map.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Home</a>
+            <a href="contatti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Contatti</a>
+            <a href="crediti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-3">Crediti</a>
+            <a href="policy.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-4">Politica dati</a>
+            <a href="en/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-5">English version</a>
+            <button type="button" class="block px-4 py-2 text-sm text-gray-700" id="theme_toggle">Theme Toggle</button>
+        </div>
+        </div>
+      </nav>
+      <!-- link width https://tailwindcss.com/docs/width -->
+      <div class="m-0 p-8 w-screen h-screen">
+            <div class="flex flex-col  w-auto h-auto justify-center items-center relative m-0 z-10 top-20">
+                <div class="h-auto w-11/12 text-4xl text-gray-900 font-bold text-center mb-6 p-6 uppercase tracking-wider">F A Q</div>
+                <div class="w-11/12 mt-2">
+                    <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">Chi siamo</button>
+                    <div class="h-auto w-full p-6 hidden">
+                        <span>
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+                        </span>  
+                    </div>
+                </div>
+                <div class="w-11/12 mt-2">
+                    <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">IL NOSTRO SCOPO</button>
+                    <div class="h-auto w-full p-6 hidden">
+                        <span>
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+                        </span>  
+                    </div>
+                </div>
+                <div class="w-11/12 mt-2">
+                    <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">la storia</button>
+                    <div class="h-auto w-full p-6 hidden">
+                        <span>
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+                        </span>  
+                    </div>
+                </div>
+                <div class="w-11/12 mt-2">
+                    <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">i video</button>
+                    <div class="h-auto w-full p-6 hidden">
+                        <span>
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+                        </span>  
+                    </div>
+                </div>
+                <div class="w-11/12 mt-2">
+                    <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">sviluppo</button>
+                    <div class="h-auto w-full p-6 hidden">
+                        <span>
+                            L'intero progetto &egrave; stato realizzato dagli alunni delle classi 4ALM e 5ALA. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+                        </span>  
+                    </div>
+                </div>
+                <div class="w-11/12 mt-2">
+                    <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">privacy</button>
+                    <div class="h-auto w-full p-6 hidden">
+                        <span>
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+                        </span>  
+                    </div>
+                </div>
+                <div class="flex justify-between lg:justify-center lg:gap-8 items-center my-4 w-11/12">
+                    <button id="sbloccaTuttoButton" class="block rounded-3xl text-white p-3 w-28 lg:w-48 uppercase tracking-wider bg-gray-900">VEDI TUTTO</button>
+                    <button id="bloccaTuttoButton" class="block rounded-3xl text-white p-3 w-28 lg:w-48 uppercase tracking-wider bg-gray-900">CHIUDI TUTTO</button>
+                </div>
+            </div>
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+    
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("bg-gray-900");
+                    this.classList.toggle("bg-gray-500");
+                    var panel = this.nextElementSibling;
+                    panel.classList.toggle("hidden");
+                });
+                };
+
+                var accOperator=document.getElementsByClassName("accordion");
+                var buttons=document.getElementById("sbloccaTuttoButton");
+                var buttonh=document.getElementById("bloccaTuttoButton");
+
+                buttons.addEventListener("click", see_all);
+                function see_all(){
+                    var sl;
+                    for(let element of document.getElementsByClassName("accordion")){
+                    element.classList.remove("bg-gray-900");
+                    element.classList.add("bg-gray-500");
+                    sl = element.nextElementSibling;
+                    sl.classList.remove("hidden");
+                    };
+                };
+
+                buttonh.addEventListener("click", hide_all);
+                function hide_all(){
+                    var pl;
+                    for(let element of document.getElementsByClassName("accordion")){
+                    element.classList.add("bg-gray-900");
+                    element.classList.remove("bg-gray-500");
+                    sl = element.nextElementSibling;
+                    sl.classList.add("hidden");
+                    };
+                };
+
+                //change theme toggle
+
+                (function() {
+                    let onpageLoad = localStorage.getItem("theme") || "";
+                    let element = document.body;
+                    element.classList.add(onpageLoad);
+                    document.getElementsByTagName("html").textContent = localStorage.getItem("theme") || "light";
+                });
+                
+                function themeToggle() {
+                    let element = document.body;
+                    element.classList.toggle("dark");
+
+                    let theme = localStorage.getItem("theme");
+                    if (theme && theme === "dark") {
+                        localStorage.setItem("theme", "");
+                    } else {
+                        localStorage.setItem("theme", "dark");
+                    }
+
+                    document.getElementsByTagName("html").textContent = localStorage.getItem("theme");
+                }
+                document.getElementById("theme_toggle").addEventListener("click", themeToggle);
+                
+            </script>
+           
+        </div>
+      
+      </div>      
+</body>
+</html>

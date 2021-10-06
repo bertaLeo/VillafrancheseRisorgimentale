@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="css/aos.css"/>
+    <script src="js/aos.js"></script> 
+    <script src="js/map.js"></script>
+    <script src="leaflet/leaflet.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+      .leaflet-control-attribution.leaflet-control{
+        position: relative;
+        right: calc((100vw - 4rem - 270px)/2);
+        padding: 0.1rem 0 0 0;
+        top: 2.9rem;
+        border-radius: 0 0 .75rem .75rem;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+      }
+      .bg-map{
+            background-image: url(image/mapp.svg);
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+      }
+    </style>
+</head>
+<body class="bg-map">
+      <script>
+        AOS.init();
+      </script>
+      <div class="z-40 fixed w-full flex justify-center items-center">
+          <header class="top-0 fixed w-full mx-8 h-14 border-0 bg-gray-900 rounded-b-2"> </header>
+      </div>
+      <nav class="fixed w-full z-50 bg-traspanent rounded-b-full">
+        <div class="px-8 pt-8">
+          <div class="flex justify-between items-center text-white bg-gray-900 rounded-full text-2xl">
+            <a href="faq.html" class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-500">
+              <span>?</span>
+              <!-- o icon-help -->
+            </a>
+            <div>
+              AvAnti Savoia!
+            </div>
+            <button id="menu_button" role="button" class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-500">
+              <i id="menu_icon" class="icon-menu1"></i>
+              <!-- oppure icon-more_vert o icon-menu1 o icon-pending -->
+            </button>
+          </div>
+          <div id="menu_dropdown" class="origin-top-right absolute right-8 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+            <a href="map.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="0" id="user-menu-item-0">Home</a>
+            <a href="contatti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="0" id="user-menu-item-1">Contatti</a>
+            <a href="crediti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="0" id="user-menu-item-3">Crediti</a>
+            <a href="policy.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="0" id="user-menu-item-4">Politica dati</a>
+            <a href="en/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="0" id="user-menu-item-5">English version</a>
+          </div>
+        </div>
+      </nav>
+      <!-- link width https://tailwindcss.com/docs/width -->
+      <div class="m-0 p-8 w-screen h-screen z-0">
+          <div id="map" class="realtive z-0 w-full h-5/6 m-0 rounded-3xl top-0 mb-6"></div>
+          <div class="flex flex-col  w-auto h-auto justify-center items-center relative m-0 z-10 -top-20">
+            <div id="descrizione" class="h-auto w-11/12 rounded-3xl bg-gray-900 text-white p-6">
+              <div class="w-auto h-auto p-1">
+                <h1 id="descrition_title" class="text-2xl mb-6 text-center mx-6 lg:mx-0 lg:text-left">AvAnti! Villafranca Risorgimentale</h1>
+                <span id="descrition_descrition">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nulla metus. Fusce a libero vitae augue semper semper eget sed nibh. Duis facilisis ante eget dolor lobortis, non porttitor mauris tristique. Vivamus congue libero eget pulvinar laoreet. Duis ac eros rhoncus, lobortis ligula eget, suscipit est. Mauris sit amet aliquam dui. Morbi id erat efficitur, mollis velit at, auctor magna. Sed eros eros, placerat vestibulum mi nec, tincidunt tempor est. Vivamus at dolor nulla. Morbi eget tellus vel purus ullamcorper bibendum.
+                  <br>
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+                </span>  
+              </div>
+            </div>
+            <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" id="progetto" class="h-auto w-11/12 rounded-3xl bg-gray-900 text-white p-6 mt-10">
+              <div class="w-auto h-auto p-1">
+                <h1 id="progetto_title" class="text-2xl mb-6 text-center mx-6 lg:mx-0 lg:text-left">Il progetto</h1>
+                <span id="progetto_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nulla metus. Fusce a libero vitae augue semper semper eget sed nibh. Duis facilisis ante eget dolor lobortis, non porttitor mauris tristique. Vivamus congue libero eget pulvinar laoreet. Duis ac eros rhoncus, lobortis ligula eget, suscipit est. Mauris sit amet aliquam dui. Morbi id erat efficitur, mollis velit at, auctor magna. Sed eros eros, placerat vestibulum mi nec, tincidunt tempor est. Vivamus at dolor nulla. Morbi eget tellus vel purus ullamcorper bibendum.
+                </span>
+              </div>
+            </div>
+            <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" id="sponsor" class="h-auto w-11/12 rounded-3xl bg-gray-900 text-white p-6 mt-10">
+              <div class="w-auto h-auto p-1 flex justify-center items-center">
+                <h1 id="sponsor_title" class="text-2xl text-center mx-6 lg:mx-0 lg:text-left"><a href="galleria.html">La nostra galleria <i class="text-base icon-arrow-right2"></i></a></h1>
+              </div>
+            </div>
+            <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" id="sponsor" class="h-auto w-11/12 rounded-3xl bg-gray-900 text-white p-6 mt-10 mb-10">
+              <div class="w-auto h-auto p-1">
+                <h1 id="sponsor_title" class="text-2xl mb-6 text-center mx-6 lg:mx-0 lg:text-left">I nostri sponsor</h1>
+                <span id="sponsor_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nulla metus. 
+                </span>
+                <div class="grid grif-cols-1 lg:grid-cols-3 gap-4 mt-6">
+                  <div class="text-center bg-red-800">1</div>
+                  <div class="text-center bg-red-800">2</div>
+                  <div class="text-center bg-red-800">3</div>                  
+                </div>
+              </div>
+            </div>
+        </div>
+      
+      </div>
+      
+      <!-- <div class="p-8 w-screen h-screen">
+        <div id="map" class="relative z-0 w-full h-full rounded-3xl top-1 bottom-10"></div>
+        <div class="flex w-auto h-auto justify-center items-center relative z-10 -top-20">
+          <div id="descrizione" class="h-auto rounded-3xl bg-gray-900 text-white p-8">
+            Lorem Ipsum <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nulla metus. Fusce a libero vitae augue semper semper eget sed nibh. Duis facilisis ante eget dolor lobortis, non porttitor mauris tristique. Vivamus congue libero eget pulvinar laoreet. Duis ac eros rhoncus, lobortis ligula eget, suscipit est. Mauris sit amet aliquam dui. Morbi id erat efficitur, mollis velit at, auctor magna. Sed eros eros, placerat vestibulum mi nec, tincidunt tempor est. Vivamus at dolor nulla. Morbi eget tellus vel purus ullamcorper bibendum.
+            <br>
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+          </div>
+        </div> -->
+
+        
+</body>
+</html>

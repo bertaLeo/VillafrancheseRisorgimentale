@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <script src="js/script.js"></script>
+    <style>
+        .bg-map{
+            background-image: url(image/mapp.svg);
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-map">
+    <div class="z-40 fixed w-full flex justify-center items-center">
+        <header class="top-0 fixed w-full mx-8 h-14 border-0 bg-gray-900 rounded-b-2"> </header>
+    </div>
+      <nav class="fixed w-full z-50 bg-traspanent rounded-b-full">
+        <div class="px-8 pt-8">
+          <div class="flex justify-between items-center text-white bg-gray-900 rounded-full text-2xl">
+            <a href="faq.html" class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-500">
+              <span>?</span>
+              <!-- o icon-help -->
+            </a>
+            <div>
+              AvAnti Savoia!
+            </div>
+            <button id="menu_button" role="button" class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-500">
+              <i id="menu_icon" class="icon-menu1"></i>
+              <!-- oppure icon-more_vert o icon-menu1 o icon-pending -->
+            </button>
+          </div>
+          <div id="menu_dropdown" class="origin-top-right absolute right-8 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+            <a href="map.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Home</a>
+            <a href="contatti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Contatti</a>
+            <a href="crediti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-3">Crediti</a>
+            <a href="policy.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-4">Politica dati</a>
+            <a href="en/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-5">English version</a>
+          </div>
+        </div>
+      </nav>
+      <!-- link width https://tailwindcss.com/docs/width -->
+      <div class="m-0 p-8 w-screen h-screen">
+            <div class="flex w-auto justify-center items-center relative m-0 z-10 top-20" style="height: calc(100vh - 8rem)">
+                <div class="w-11/12 bg-gray-900 rounded-3xl text-white p-6">
+                    <h1 class="tracking-wider text-xl md:text-2xl text-center">ISTITUTO CARLO ANTI</h1>
+                    <div class="mt-6">
+                        <ul class="block md:grid md:justify-center md:items-center md:gap-4 list-none">
+                            <li class="block"><i class="icon-map1 pr-2"></i><div class="relative left-6 -top-6 bottom-0 -mb-6">Via Magenta 7, Villafranca di Verona</div></li>
+                            <li class="block"><i class="icon-phone1 pr-2"></i><a href="tel:+390456303088">045 6303088</a></li>
+                            <li class="block"><i class="icon-alternate_email pr-2"></i><a href="mailto:">mail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+      
+      </div>      
+</body>
+</html>
