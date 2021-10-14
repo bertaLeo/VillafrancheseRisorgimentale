@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="../../css/tailwind.css">
     <link rel="stylesheet" href="../../icomoon/style.css">
     <script src="../../js/script.js"></script>
-
+    <style>
+      .hvideo{
+        height: calc(100vw * 1,25);
+      }
+      @media screen and (min-width: 1279px){
+        .hvideo{
+          height: 75vh;
+        }
+      }
+    </style>
 </head>
 <body>
     <div class="z-40 fixed w-full flex justify-center items-center">
@@ -31,12 +40,24 @@
         </div>
       </div>
     </nav>
-    <div class="w-screen bg-black flex justify-center items-center relative top-12" style="height: calc(100vh - 3rem)">
-        <video class="w-screen" style="height: calc(100vw * 0.5625)" controls controlslist="nodownload" poster="/images/w3html5.gif">
-            <source class="w-screen" src="video.mp4" type="video/mp4">
+    <div class="w-screen bg-black flex flex-col justify-center items-center relative top-12" style="height: auto">
+      <!-- <video class="w-screen" style="height: calc(100vw * 1,333333333)" controls controlslist="nodownload" poster="/images/w3html5.gif"> per 3:4 -->
+        <video class="w-auto lg:mt-12 lg:mb-2 mt-2 hvideo" controls controlslist="nodownload" poster="../frame.png" preload="auto">
+            <source src="../4_5.mp4" type="video/mp4">
             <track src="vtt_trial.vtt" srclang="english"/>
             Your browser does not support the video tag.
         </video>
+        <div class="w-auto text-white p-8" style="background-color: rgb(5, 5, 22);">
+          <div class="flex justify-center items-center"> 
+            <div class="bg-gray-900 h-2 w-16 mb-2 rounded-full"> </div>
+          </div>
+          <h1 class="text-center pt-4 pb-6 text-3xl font-bold">VIDEO PROVA</h1>
+          <hr>
+          <h6 class="text-base mt-6" style="color:#0645AD">#risorgimento #villa #casadeltrattato</h6>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut pharetra enim. Fusce in nunc tellus. In in vestibulum risus, at pulvinar mi. Mauris non feugiat metus, sed blandit ante. Maecenas vel est diam. Etiam nisl sem, bibendum quis lectus vel, aliquam dignissim leo. Mauris tincidunt nisi eget tellus pretium ullamcorper. Sed vitae urna et orci elementum lacinia. Sed lacinia, lacus eu suscipit hendrerit, leo enim dapibus augue, quis venenatis dui sem quis ligula. Suspendisse auctor finibus tellus, id scelerisque augue blandit a. Fusce tortor sem, pharetra at nisi id, bibendum ultricies nulla.
+          </p>
+        </div>
     </div>
     <script>
     </script>

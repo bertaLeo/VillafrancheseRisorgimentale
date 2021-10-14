@@ -21,9 +21,14 @@
         background-color: black;
         color:white
         }
+        p{
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            display: inline;
+        }
     </style>
 </head>
-<body class="bg-map dark:bg-gray-200">
+<body class="bg-map dark:bg-black">
     <div class="z-40 fixed w-full flex justify-center items-center">
         <header class="top-0 fixed w-full mx-8 h-14 border-0 bg-gray-900 rounded-b-2"> </header>
     </div>
@@ -48,60 +53,59 @@
             <a href="crediti.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-3">Crediti</a>
             <a href="policy.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-4">Politica dati</a>
             <a href="en/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-5">English version</a>
-            <button type="button" class="block px-4 py-2 text-sm text-gray-700" id="theme_toggle">Theme Toggle</button>
         </div>
         </div>
       </nav>
       <!-- link width https://tailwindcss.com/docs/width -->
       <div class="m-0 p-8 w-screen h-screen">
             <div class="flex flex-col  w-auto h-auto justify-center items-center relative m-0 z-10 top-20">
-                <div class="h-auto w-11/12 text-4xl text-gray-900 font-bold text-center mb-6 p-6 uppercase tracking-wider">F A Q</div>
+                <div class="h-auto w-11/12 text-4xl dark:text-white text-gray-900 font-bold text-center mb-6 p-6 uppercase tracking-wider">F A Q</div>
                 <div class="w-11/12 mt-2">
                     <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">Chi siamo</button>
                     <div class="h-auto w-full p-6 hidden">
-                        <span>
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
-                        </span>  
+                        <p class="text-black dark:text-white bg-white dark:bg-black">
+                             Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
+                        </p>  
                     </div>
                 </div>
                 <div class="w-11/12 mt-2">
                     <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">IL NOSTRO SCOPO</button>
                     <div class="h-auto w-full p-6 hidden">
-                        <span>
+                        <p class="text-black dark:text-white bg-white dark:bg-black">
                             Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
-                        </span>  
+                        </p>  
                     </div>
                 </div>
                 <div class="w-11/12 mt-2">
                     <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">la storia</button>
                     <div class="h-auto w-full p-6 hidden">
-                        <span>
+                        <p class="text-black dark:text-white bg-white dark:bg-black">
                             Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
-                        </span>  
+                        </p>  
                     </div>
                 </div>
                 <div class="w-11/12 mt-2">
                     <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">i video</button>
                     <div class="h-auto w-full p-6 hidden">
-                        <span>
+                        <p class="text-black dark:text-white bg-white dark:bg-black">
                             Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
-                        </span>  
+                        </p>  
                     </div>
                 </div>
                 <div class="w-11/12 mt-2">
                     <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">sviluppo</button>
                     <div class="h-auto w-full p-6 hidden">
-                        <span>
+                        <p class="text-black dark:text-white bg-white dark:bg-black">
                             L'intero progetto &egrave; stato realizzato dagli alunni delle classi 4ALM e 5ALA. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
-                        </span>  
+                        </p>  
                     </div>
                 </div>
                 <div class="w-11/12 mt-2">
                     <button class="accordion h-auto w-full rounded-3xl text-white mt-2 p-6 uppercase tracking-wider bg-gray-900">privacy</button>
                     <div class="h-auto w-full p-6 hidden">
-                        <span>
+                        <p class="text-black dark:text-white bg-white dark:bg-black">
                             Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a hendrerit risus. Sed pharetra maximus metus ultrices iaculis. Nam ultricies elementum massa, non egestas ligula mattis eget. Proin vehicula est et risus sagittis, et vehicula urna consectetur. Nunc in massa consectetur, mollis nulla volutpat, tempor nibh. Duis egestas metus magna. Ut lacinia dapibus blandit. Vestibulum sollicitudin aliquam orci ut egestas.
-                        </span>  
+                        </p>  
                     </div>
                 </div>
                 <div class="flex justify-between lg:justify-center lg:gap-8 items-center my-4 w-11/12">

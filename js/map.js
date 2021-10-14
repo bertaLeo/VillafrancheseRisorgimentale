@@ -18,15 +18,23 @@ var x = document.getElementById("demo");
             x.innerHTML = "Geolocation is not supported by this browser.";
           }
         };
-        
+        var map_layer = 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
         function showPosition(position) {
           x.innerHTML = "Latitude: " + position.coords.latitude + 
           "<br>Longitude: " + position.coords.longitude;
         };
+        const body = document.getElementsByTagName("body")[0];
+        // if (body.classList.contains("dark")){
+        //   map_layer = 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png';
+        // }
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (userPrefersDark) {
+          map_layer = 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png';
+        }
+        L.tileLayer(map_layer, {
+            attribution: '&copy;&nbsp;<a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>&nbsp;contributors&nbsp;-&nbsp;&copy;&nbsp;<a href="http://cartodb.com/attributions">CartoDB</a>'
+          }).addTo(map);
 
-        L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-                    attribution: '&copy;&nbsp;<a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>&nbsp;contributors&nbsp;-&nbsp;&copy;&nbsp;<a href="http://cartodb.com/attributions">CartoDB</a>'
-        }).addTo(map);
         if ('geolocation' in navigator) {
           console.log('geolocation available');
           navigator.geolocation.getCurrentPosition(position => {
@@ -46,8 +54,8 @@ var x = document.getElementById("demo");
           iconUrl: 'image/circle24.png',
           iconRetinaUrl:'image/circle48.png',
           iconSize: [10, 10],
-          iconAnchor: [5, 5],
-          popupAnchor: [1,0],
+          iconAnchor: [5, 3],
+          popupAnchor: [0,0],
         });
         var myIcon2 = L.icon({
           iconUrl: 'image/pin24blu.png',
