@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta property="og:title" content="Palazzo Bottagisio">
+    <meta property="og:type" content="website" />
+    <meta property="og:video:secure_url" content="https://bertanileonardo.altervista.org/beta/progetto-villafranca/video/4_5.mp4" />
+    <meta property="og:video:type" content="video/mpeg" />
+    <meta property="og:video:width" content="400" />
+    <meta property="og:video:height" content="500" />
+    <meta name="description" content="video Palazzo">
+    <meta property="og:video" content="https://bertanileonardo.altervista.org/beta/progetto-villafranca/video/4_5.mp4">
     <link rel="stylesheet" href="../../css/tailwind.css">
     <link rel="stylesheet" href="../../icomoon/style.css">
-    <script src="../../js/script.js"></script>
+    <link rel="stylesheet" href="../../css/share.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="../../js/script.js"></script> -->
+    <script src="../../js/share.js"></script>
     <style>
       .hvideo{
         height: calc(100vw * 1,25);
@@ -40,26 +51,69 @@
         </div>
       </div>
     </nav>
+    <social>
+        <div id="share_banner" class="fixed flex justify-center items-center w-screen h-screen bg-red-300 bg-opacity-50 z-50 hidden">
+          <div class="p-8 text-black bg-white rounded-3xl flex flex-col justify-center items-center">
+            <h1 class="text-3xl pt-2 pb-6 tracking-widest">CONDIVIDI</h1>
+            <div class="flex flex-row gap-6">
+              <input id="copyUrl" value=" https://bertanileonardo.altervista.org/beta/progetto-villafranca/index.html" class="w-36 lg:w-auto">
+              <div class="tooltip">
+                <button class="" role="button" id="copyBtn">
+                  <span class="tooltiptext" id="myTooltip">Copia</span><i class="fas fa-link"></i>
+                </button>
+              </div>
+            </div>
+            <div class="mt-8 flex justify-center items-center flex-col lg:flex-row gap-4">
+              <a class="py-4 w-48 border-2 border-black hover:border-white border-solid rounded-full hover:text-white bg-whatsapp flex justify-center items-center flex-row gap-2" href=""><i class="icon-whatsapp"></i><span>WHATSAPP</span></a>
+              <a class="py-4 w-48 border-2 border-black hover:border-white border-solid rounded-full hover:text-white bg-twitter flex justify-center items-center flex-row gap-2" href=""><i class="icon-twitter"></i><span>TWITTER</span></a>
+              <a class="py-4 w-48 border-2 border-black hover:border-white border-solid rounded-full hover:text-white bg-facebook flex justify-center items-center flex-row gap-2" href=""><i class="icon-facebook"></i><span>FACEBOOK</span></a>
+              <a class="py-4 w-48 border-2 border-black hover:border-white border-solid rounded-full hover:text-white bg-telegram flex justify-center items-center flex-row gap-2" href=""><i class="icon-telegram"></i><span>TELEGRAM</span></a>
+              <a class="hidden lg:flex py-4 w-48 border-2 border-black hover:border-white border-solid rounded-full hover:text-white hover:bg-gray-500 flex justify-center items-center flex-row gap-2" href=""><i class="icon-mail_outline"></i><span>EMAIL</span></a>
+            </div>
+            <button id="share_banner_close" class="mt-8 py-4 w-48 bg-red-300  rounded-full text-red-900 flex justify-center items-center flex-row gap-2" href=""><i class="fas fa-times"></i><span>CHIUDI</span></button>
+          </div>
+        </div>
+    </social>
     <main class="bg-black flex flex-col justify-center items-center relative top-12" style="height: auto">
       <!-- <video class="w-screen" style="height: calc(100vw * 1,333333333)" controls controlslist="nodownload" poster="/images/w3html5.gif"> per 3:4 -->
         <video class="w-auto lg:mt-12 lg:mb-2 mt-2 hvideo" controls controlslist="nodownload" poster="../frame.png" preload="auto">
             <source src="../4_5.mp4" type="video/mp4">
-            <track src="vtt_trial.vtt" srclang="english"/>
-            Your browser does not support the video tag.
+            <track src="vtt_trial.vtt" srclang="italiano"/>
+            Il tuo browser non supporta la riproduzione di questo video.
         </video>
         <div class="w-auto text-white p-8" style="background-color: rgb(5, 5, 22);">
           <div class="flex justify-center items-center"> 
             <div class="bg-gray-900 h-2 w-16 mb-2 rounded-full"> </div>
           </div>
-          <h1 class="text-center pt-4 pb-6 text-3xl font-bold">VIDEO PROVA</h1>
-          <hr>
-          <h6 class="text-base mt-6" style="color:#0645AD">#risorgimento #villa #casadeltrattato</h6>
-          <p class="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut pharetra enim. Fusce in nunc tellus. In in vestibulum risus, at pulvinar mi. Mauris non feugiat metus, sed blandit ante. Maecenas vel est diam. Etiam nisl sem, bibendum quis lectus vel, aliquam dignissim leo. Mauris tincidunt nisi eget tellus pretium ullamcorper. Sed vitae urna et orci elementum lacinia. Sed lacinia, lacus eu suscipit hendrerit, leo enim dapibus augue, quis venenatis dui sem quis ligula. Suspendisse auctor finibus tellus, id scelerisque augue blandit a. Fusce tortor sem, pharetra at nisi id, bibendum ultricies nulla.
-          </p>
+          <h1 class="text-center pt-4 pb-6 text-3xl font-bold">Palazzo Bottagisio</h1>
+          <div class="md:flex md:flex-col md:justify-center md:items-center">
+            <div class="md:w-2/3">
+              <hr>
+              <h6 class="text-base mt-6" style="color:#0645AD">#risorgimento #villa #casadeltrattato</h6>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut pharetra enim. Fusce in nunc tellus. In in vestibulum risus, at pulvinar mi. Mauris non feugiat metus, sed blandit ante. Maecenas vel est diam. Etiam nisl sem, bibendum quis lectus vel, aliquam dignissim leo. Mauris tincidunt nisi eget tellus pretium ullamcorper. Sed vitae urna et orci elementum lacinia. Sed lacinia, lacus eu suscipit hendrerit, leo enim dapibus augue, quis venenatis dui sem quis ligula. Suspendisse auctor finibus tellus, id scelerisque augue blandit a. Fusce tortor sem, pharetra at nisi id, bibendum ultricies nulla.
+              </p>
+            </div>
+          </div>
+        
+            <social>  
+                <button id="share_banner_open" class="w-full lg:w-auto mt-8 lg:mt-0 lg:z-40 lg:top-0 lg:fixed text-xl py-4 lg:py-0 px-12 lg:px-0 lg:left-6 border-2 lg:border-0 border-white border-solid rounded-full lg:hover:bg-transparent z-10 lg:flex lg:flex-col lg:h-screen lg:justify-center lg:items-center" role="button">
+                    <div class="lg:py-4 lg:px-4 lg:hover:text-black lg:hover:bg-white lg:border-2 lg:border-white lg:border-solid lg:rounded-full">
+                        <i class="icon-share1 lg:block"></i><span class="ml-8 lg:ml-0 lg:block lg:transform lg:w-4 lg:mt-28 lg:relative lg:top-0 lg:-rotate-90 tracking-widest">CONDIVIDI</span>
+                    </div>
+                </button>
+            </social>
+          <div class="flex flex-row justify-center items-center mt-8 w-full"> 
+            <a class="w-full md:w-auto text-center text-xl py-4 px-8 border-2 border-white border-solid rounded-full hover:text-black hover:bg-gray-100" href="https://www.google.com/maps/place/Casa+Del+Trattato/@45.3526979,10.8422904,20.75z/data=!4m5!3m4!1s0x4781ddd450d46bb3:0xbbe17ba533e99e98!8m2!3d45.3526949!4d10.8427904" target="_blank" rel="noopener noreferrer">
+              <div class="w-full">
+                <i class="icon-pin_drop"></i> Palazzo Bottagisio<span class="hidden lg:inline">, Via Pace 40, 37069 Villafranca di Verona</span>
+              </div>
+            </a>
+          </div>
         </div>
       </main>
     <script>
+        
     </script>
 </body>
 </html>
